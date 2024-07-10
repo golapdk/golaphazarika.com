@@ -1,0 +1,161 @@
+<div class="flex mac-dialog">
+    <div class="mac-folder-header flex-none w-[220px]">
+        <div>
+          <span class="mac-icon close" (click)="close()"></span>
+          <span class="mac-icon minimize" (click)="minimize()"></span>
+          <span class="mac-icon maximize" (click)="maximize()"></span>
+        </div>
+        <div class="mt-4">
+            <div class="text-xs font-semibold	text-slate-400	mb-2">
+              Favourites
+            </div>
+            <div class="flex mb-2">
+              <div>
+                <img src="../../../../assets/images/aptana.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-3">
+                Applications
+              </div>
+            </div>
+            <div class="flex mb-3">
+              <div>
+                <img src="../../../../assets/images/show-desktop.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Desktop
+              </div>
+            </div>
+            <div class="flex mb-3">
+              <div>
+                <img src="../../../../assets/images/folder_c.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Documents
+              </div>
+            </div>
+            <div class="flex mb-3">
+              <div>
+                <img src="../../../../assets/images/deepin-download.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Downloads
+              </div>
+            </div>
+            <div class="flex mb-3 action-active">
+              <div>
+                <img src="../../../../assets/images/picasaicon.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Pictures
+              </div>
+            </div>
+            <div class="flex mb-3">
+              <div>
+                <img src="../../../../assets/images/banshee.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Music
+              </div>
+            </div>
+            <div class="flex mb-3">
+              <div>
+                <img src="../../../../assets/images/cinelerra.png" [width]="20" alt="" srcset="">
+              </div>
+              <div class="ml-2">
+                Movies
+              </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="text-xs font-semibold	text-slate-400	mb-2">
+            Locations
+          </div>
+          <div class="flex mb-2">
+            <div>
+              <img src="../../../../assets/images/yast-samba-client.png" [width]="20" alt="" srcset="">
+            </div>
+            <div class="ml-3">
+              iCloud Drive
+            </div>
+          </div>
+          <div class="flex mb-3">
+            <div>
+              <img src="../../../../assets/images/computer.png" [width]="20" alt="" srcset="">
+            </div>
+            <div class="ml-2">
+              Golap's MacBook Pro
+            </div>
+          </div>
+          <div class="flex mb-3">
+            <div>
+              <img src="../../../../assets/images/device-harddisk-usb.png" [width]="20" alt="" srcset="">
+            </div>
+            <div class="ml-2">
+              Data
+            </div>
+          </div>
+          
+      </div>
+
+        
+    </div>
+    <div class="mac-folder-content flex-1" [class.minimized]="isMinimized">
+      <div class="flex justify-between p-[20px]" style="border-bottom: 1px solid #dddddd;">
+        <div class="flex items-center">
+          <div>
+            <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+          </div>
+          <div class="ml-3 font-semibold text-base	">
+            Pictures
+          </div>
+        </div>
+        <div class="flex flex-row-reverse">
+            <!-- <div>
+              <svg _ngcontent-ng-c3476670680="" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-ng-c3476670680="" d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div> -->
+            <!-- <div class="mr-6">
+              <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+            </div>
+            <div class="mr-3">
+              <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+            </div>
+            <div class="mr-3">
+              <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+            </div>
+            <div class="mr-3">
+              <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+            </div>
+            <div class="mr-3">
+              <img src="/assets/images/picasaicon.png" [width]="20" alt="">
+            </div> -->
+        </div>
+        
+      </div>
+      <div class="mac-folder-content-body">
+        <div>
+          <div class="flex my-[13px] text-slate-600	">
+            <div class="w-[100px]" >
+                <div class="flex justify-center">
+                    <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                </div>
+                <div class="text-center break-all">Pictures</div>
+            </div>
+            <div class="w-[100px]" >
+                <div class="flex justify-center">
+                    <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                </div>
+                <div class="text-center break-all">Videos</div>
+            </div>
+            <div class="w-[100px]">
+                <div class="flex justify-center">
+                    <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                </div>
+                <div class="text-center break-all">Documents</div>
+            </div>            
+        </div>
+        </div>
+
+      </div>
+    </div>
+</div>

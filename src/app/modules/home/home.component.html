@@ -1,0 +1,47 @@
+<app-menu-bar #macmenubar></app-menu-bar>
+@defer (on viewport(macmenubar)) {
+<div class="">
+    <div class="flex">
+        <div class="m-[13px]">
+            <app-image-widget></app-image-widget>
+        </div>
+        <div class="my-[13px]">
+            <app-weather-widget></app-weather-widget>
+        </div>
+        <div class="ml-auto flex ">
+            <div class="grid my-[13px] text-white">
+                <div class="w-[100px]" (dblclick)="onClickDesktopIcon('pictures')">
+                    <div class="flex justify-center">
+                        <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                    </div>
+                    <div class="text-center break-all">Pictures</div>
+                </div>
+                <div class="w-[100px]" (dblclick)="onClickDesktopIcon('videos')">
+                    <div class="flex justify-center">
+                        <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                    </div>
+                    <div class="text-center break-all">Videos</div>
+                </div>
+                <div class="w-[100px]" (dblclick)="onClickDesktopIcon('documents')">
+                    <div class="flex justify-center">
+                        <img src="../../../assets/images/folder_c.png" [width]="50" alt="" srcset="">
+                    </div>
+                    <div class="text-center break-all">Documents</div>
+                </div>
+                <div class="w-[100px]">
+                    <div class="flex justify-center" (dblclick)="onClickDesktopIcon('pdf')">
+                        <img src="../../../assets/images/pdf-file.png" [width]="50" alt="" srcset="">
+                    </div>
+                    <div class="text-center break-all">Golap_Resume.pdf</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="mx-[13px]">
+        <app-notes-widget></app-notes-widget>
+    </div>
+    
+</div>
+}
+<app-dock-bar></app-dock-bar>

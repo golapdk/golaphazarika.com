@@ -1,0 +1,75 @@
+.mac-dialog{
+  min-height: 70vh;
+  height: 100%;
+  border-radius: 20px;
+  // background-color: red;
+}
+.mac-folder-header {
+    // display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 15px 20px 15px 20px;
+    // cursor: move; /* Change cursor to indicate draggable area */
+    
+  }
+  
+  .mac-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  
+  .mac-icon.close {
+    background-color: #ff5f57;
+  }
+  
+  .mac-icon.minimize {
+    background-color: #ffbd2e;
+  }
+  
+  .mac-icon.maximize {
+    background-color: #28c940;
+  }
+  
+  .mac-folder-content-body {
+    padding: 20px;
+    // transition: height 0.3s;
+  }
+  
+  .minimized {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  /* Optional: Add custom dialog styles to make it look like a macOS window */
+//   ::ng-deep .mac-folder-dialog .mat-dialog-container {
+//     padding: 0;
+//     border-radius: 8px;
+//     overflow: hidden;
+//   }
+
+  ::ng-deep .mac-folder-dialog .mat-dialog-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transform: none; /* Override the default centering transform */
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: transparent;
+  }
+  
+  /* Custom class for maximized state */
+  ::ng-deep .custom-maximized {
+    height: 88vh !important;
+    margin-top: -42px !important;
+  }
+  
+  .action-active {
+    background: #c9c9c9;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
